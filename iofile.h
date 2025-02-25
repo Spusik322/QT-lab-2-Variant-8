@@ -1,6 +1,6 @@
 #pragma once
 #include <QTextStream>
-#include <QtLogging>
+#include <QDebug>
 #include <QString>
 #include <QFile>
 #include <QVector>
@@ -8,6 +8,9 @@
 class IOFile
 {
 public:
-    bool readFile(const QString& filePath, QString& content);
-    bool writeFile(const QString& filePath, const QString& content);
+    bool readFile(const QString& filePath);
+    bool writeFile(const QString& filePath);
+    QVector<QString> getResult() const;
+private:
+    QVector<QString> result;
 };

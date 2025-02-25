@@ -9,7 +9,8 @@ CONFIG += c++17 cmdline
 SOURCES += \
         dataparser.cpp \
         iofile.cpp \
-        main.cpp
+        main.cpp \
+        solver.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -18,4 +19,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     dataparser.h \
-    iofile.h
+    iofile.h \
+    solver.h
