@@ -3,7 +3,7 @@
 bool IOFile::readFile(const QString& filePath) {
     QFile file(filePath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qDebug() << "Error: Could't open file for reading:" << filePath;
+        qDebug() << "Error: Could't open file for reading:" << filePath << "Error:" << file.errorString();
         return false;
     }
     QTextStream in(&file);
@@ -11,6 +11,7 @@ bool IOFile::readFile(const QString& filePath) {
         QString line = in.readLine();
         line.remove('\t');
         line.remove('\n');
+        qDebug() << line;
         result.push_back(line);
     }
     file.close();

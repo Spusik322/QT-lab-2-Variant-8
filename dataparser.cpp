@@ -4,8 +4,8 @@ void DataParser::ParseData(QVector<QString> result) {
     data.insert("word1", result[0].remove(' '));
     data.insert("word2", result[1].remove(' '));
     data.insert("sentenсe", result[2]);
-    data.insert("sentenсe1", result[4]);
-    data.insert("sentenсe2", result[5]);
+    data.insert("sentenсe1", result[3]);
+    data.insert("sentenсe2", result[4]);
     qDebug() << "The general database has been created";
 }
 
