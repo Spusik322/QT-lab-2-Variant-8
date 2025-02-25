@@ -1,15 +1,14 @@
 #include <QApplication>
-#include <QString>
-#include <QMap>
-#include <QtLogging>
-#include <QTextStream>
+#include "iofile.h"
+#include "dataparser.h"
+#include "solver.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    QTextStream out(stdout);
-    QTextStream qin(stdin);
-    QString input;
+    QString in = "input.txt";
+    IOFile file;
+    file.readFile(in);
     //171
 
 
