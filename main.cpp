@@ -4,8 +4,20 @@
 #include <QtLogging>
 #include <QTextStream>
 
-int main() {
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
     QTextStream out(stdout);
+    QTextStream qin(stdin);
+    QString input;
+    //171
 
-    return 0;
+
+
+    //183
+
+
+
+    //195
+    return a.exec();
 }
