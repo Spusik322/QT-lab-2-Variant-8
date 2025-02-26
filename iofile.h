@@ -9,7 +9,7 @@ class IOFile
 {
 public:
     bool readFile(const QString& filePath);
-    bool writeFile(const QString& filePath, const QString& content);
+    bool writeFile(const QString& filePath, const QVector<QString>& content);
     QVector<QString> getResult() const;
 private:
     QVector<QString> result;

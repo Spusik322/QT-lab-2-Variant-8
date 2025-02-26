@@ -10,6 +10,7 @@ SOURCES += \
         dataparser.cpp \
         iofile.cpp \
         main.cpp \
+        repo.cpp \
         solver.cpp
 
 # Default rules for deployment.
@@ -20,4 +21,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     dataparser.h \
     iofile.h \
+    repo.h \
     solver.h
