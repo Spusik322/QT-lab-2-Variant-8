@@ -1,1 +1,3 @@
 а е м н п ф я 
+minimum length = 2
+I love programming tralala traralelo 

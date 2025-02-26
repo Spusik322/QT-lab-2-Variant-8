@@ -18,6 +18,7 @@ bool IOFile::readFile(const QString& filePath) {
     qDebug() << "File read successfully:" << filePath;
     return true;
 }
+
 bool IOFile::writeFile(const QString& filePath, const QVector<QString>& content) {
     QFile file(filePath);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
@@ -32,6 +33,7 @@ bool IOFile::writeFile(const QString& filePath, const QVector<QString>& content)
     qDebug() << "File written successfully:" << filePath; // Логирование
     return true;
 }
+
 QVector<QString> IOFile::getResult () const {
     qDebug() << "Results successfully received";
     return result;
